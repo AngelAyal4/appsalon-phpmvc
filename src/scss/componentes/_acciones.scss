@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.acciones{
+    margin-top: v.$separacion;
+    @include m.tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a{
+        color: v.$blanco;
+        display: block;
+        margin-bottom: calc(v.$separacion / 2);
+        text-align: center;
+    }
+}
+.volver-menu{
+    background-color: v.$azul;
+    padding: calc(v.$separacion / 10);
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+    @include m.tablet{
+        width: 48%;
+        
+    }
+}

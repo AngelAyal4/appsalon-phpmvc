@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.listado-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    @include m.tablet{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include m.desktop{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .servicio{
+        background-color: v.$blanco;
+        padding: 3rem;
+        text-align: center;
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem rgba(0,0,0,.1);
+        transition: transform 0.3s;
+        &.seleccionado{
+            background-color: v.$azul;
+            p{
+                color: v.$blanco;
+            }
+        }
+
+        img{
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        h3{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        p{
+            font-size: 1.6rem;
+            color: v.$negro;
+            margin: 0 0 calc(v.$separacion / 4) 0;
+        }
+        .precio-servicio{
+            font-size: 2rem;
+            color: v.$azul;
+            margin-top: 2rem;
+            font-weight: bold;
+        }
+        &:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    }
+}
