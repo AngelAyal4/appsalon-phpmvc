@@ -34,16 +34,16 @@ class AdminController
         $consulta .= " ON servicios.id=citasServicios.servicioId ";
         $consulta .= " WHERE fecha = '" . $fecha . "' ";
 
-        $cita = AdminCita::SQL($consulta);
+        $citas = AdminCita::SQL($consulta);
 
         //debuguear($cita);
 
         // Lógica para la vista de administración
         $router->render('admin/index', [
-            // Datos a pasar a la vista
             'nombre' => $_SESSION['nombre'],
-            'citas' => $cita,
+            'citas' => $citas, 
             'fecha' => $fecha
         ]);
     }
 }
+
