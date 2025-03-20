@@ -63,7 +63,7 @@ if (count($citas) === 0) {
 
                     <form action="/api/eliminar" method="POST">
                         <input type="hidden" name="id" value="<?php echo $cita->id; ?>">
-                        <input type="submit" value="eliminar" class="boton-eliminar">
+                        <input type="submit" value="Eliminar" class="boton-eliminar">
                     </form>
             <?php }
             } // Fin del foreach 
