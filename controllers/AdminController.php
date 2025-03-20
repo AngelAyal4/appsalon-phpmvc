@@ -43,7 +43,6 @@ class AdminController
             // Datos a pasar a la vista
             'nombre' => $_SESSION['nombre'],
             'citas' => $cita,
-            'idCita' => $idCita ?? null, // Asegúrate de definir $idCita o pasar null si no está definido
             'fecha' => $fecha
         ]);
     }
