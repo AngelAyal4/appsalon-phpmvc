@@ -27,6 +27,7 @@ if (count($citas) === 0) {
 <div id="citas-admin">
     <ul class="citas">
         <?php
+        $idCita = 0;
         // Itera sobre el array de citas y muestra la información de cada cita
         foreach ($citas as $key => $cita) {
             // Si el ID de la cita actual es diferente al ID de la cita anterior
