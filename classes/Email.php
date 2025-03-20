@@ -44,7 +44,7 @@ class Email
         $contenido .= '</html>';
 
         $mail->Body = $contenido;
-        $mail->AltBody = 'Para confirmar tu cuenta por favor da click en el siguiente enlace: http://localhost:3000/confirmar-cuenta?token=' . $this->token;
+        $mail->AltBody = 'Para confirmar tu cuenta por favor da click en el siguiente enlace: ' .  $_ENV['APP_URL'] .  '/confirmar-cuenta?token=' . $this->token;
 
         $mail->send();
 
@@ -82,7 +82,7 @@ class Email
         $contenido .= '</html>';
 
         $mail->Body = $contenido;
-        $mail->AltBody = 'Para confirmar tu cuenta por favor da click en el siguiente enlace: http://localhost:3000/recover?token=' . $this->token;
+        $mail->AltBody = 'Para confirmar tu cuenta por favor da click en el siguiente enlace: ' .  $_ENV['APP_URL'] .  '/recover?token=' . $this->token;
 
         $mail->send();
 
