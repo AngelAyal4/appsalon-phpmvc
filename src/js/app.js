@@ -170,7 +170,7 @@ function seleccionarServicio(servicio){
         cita.servicios = [...servicios, servicio];
         divServicio.classList.add('seleccionado');
     }
-    console.log(cita); 
+    //console.log(cita); 
 }
 
 function idCliente(){
@@ -336,14 +336,15 @@ async function reservarCita(){
 
     //Peticion hacia la api.
     try {
-        const url = `${location.origin}/api/citass`
+        const url = `${location.origin}/api/citas`
+        console.log(url);
         const respuesta = await fetch(url, {
             method: 'POST',
             body: datos
         });
 
         const resultado = await respuesta.json();
-        //console.log(resultado);
+        console.log(resultado);
         
         if(resultado.resultado) {
             Swal.fire({

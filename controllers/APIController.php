@@ -2,7 +2,6 @@
 
 namespace Controllers;
 
-use MVC\Router;
 use Model\Servicio;
 use Model\Cita;
 use Model\CitaServicio;
@@ -47,12 +46,9 @@ class APIController
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Obtener el ID de la cita a eliminar
             $id = $_POST['id'];
-
             // Eliminar la cita
             $cita = Cita::find($id);
             $cita->eliminar();
-
-
             header('Location:' . $_SERVER['HTTP_REFERER']);
             // Devolver la respuesta como JSON
             //echo json_encode(['resultado' => 'Cita eliminada']);
