@@ -1,11 +1,19 @@
 💈 AppSalon — Sistema de Gestión de Citas para Salón de Belleza
+
 <div align="center">
+     
 ![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=for-the-badge&logo=php&logoColor=white)
+
 ![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
 ![SASS](https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+
 ![Gulp](https://img.shields.io/badge/Gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white)
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 ![MVC](https://img.shields.io/badge/Arquitectura-MVC-0D6EFD?style=for-the-badge)
+
 Plataforma web fullstack para la gestión de citas en salones de belleza, construida con PHP 8 y patrón de arquitectura MVC desde cero.
 </div>
 ---
